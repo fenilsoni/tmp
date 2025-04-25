@@ -73,3 +73,13 @@ function startSlideshow() {
     currentImage++;
   }, 5000); // 5000ms = 5 seconds per photo
 }
+window.addEventListener("DOMContentLoaded", () => {
+  const bgMusic = document.getElementById("bgMusic");
+
+  // Play music after user interaction
+  document.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.play().catch((e) => console.log("Autoplay failed:", e));
+    }
+  });
+});
