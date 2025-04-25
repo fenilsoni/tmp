@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Dad!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gift-box" onclick="openGift()">🎁 Click Me!</div>
+
+      <div id="message" class="hidden">
+        <h1>🎉 Happy Birthday Dad! 🎉</h1>
+        <p id="typewriter"></p>
+        <button onclick="startSlideshow()">Play Memory Slideshow</button>
+      </div>
+
+      <div id="slideshow" class="hidden">
+        <img id="slideImage" src="" alt="Memory Photo" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <audio id="bgMusic" autoplay loop>
+      <source src="music/happy-birthday.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>
