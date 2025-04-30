@@ -71,7 +71,7 @@ function startSlideshow() {
 
     img.src = images[currentImage];
     currentImage++;
-  }, 1000); // 5000ms = 5 seconds per photo
+  }, 2000); 
 }
 window.addEventListener("DOMContentLoaded", () => {
   const bgMusic = document.getElementById("bgMusic");
